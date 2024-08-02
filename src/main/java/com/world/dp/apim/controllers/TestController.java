@@ -1,5 +1,6 @@
 package com.world.dp.apim.controllers;
 
+import com.world.dp.apim.dto.AuthResponse;
 import com.world.dp.apim.enums.ROLE;
 import com.world.dp.apim.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,10 +24,10 @@ public class TestController {
 
     @GetMapping("/validate")
     public ResponseEntity<Object> authorize(@RequestHeader String name) {
-        List<ROLE> roles = authService.getRoles(name);
+        AuthResponse authResponse = authService.getRoles(name);
 //        if (null == roles)
 //            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
-        return ResponseEntity.ok().body(roles);
+        return ResponseEntity.ok().body(authResponse);
     }
 
     @GetMapping("/get-token")

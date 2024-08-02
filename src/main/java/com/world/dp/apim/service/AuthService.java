@@ -1,5 +1,6 @@
 package com.world.dp.apim.service;
 
+import com.world.dp.apim.dto.AuthResponse;
 import com.world.dp.apim.enums.ROLE;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Service;
@@ -18,7 +19,10 @@ public class AuthService {
 
     private final HashMap<String, List<ROLE>> map = new HashMap<>();
 
-    public List<ROLE> getRoles(String name) {
-        return map.get(name);
+    public AuthResponse getRoles(String name) {
+        List<ROLE> roles = map.get(name);
+        AuthResponse authResponse = new AuthResponse();
+        authResponse.setRoles(roles);
+        return authResponse;
     }
 }
