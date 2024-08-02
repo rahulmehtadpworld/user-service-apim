@@ -1,4 +1,4 @@
-package com.world.dp.user_service_apim;
+package com.world.dp.apim;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

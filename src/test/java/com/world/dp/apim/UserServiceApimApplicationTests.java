@@ -1,4 +1,4 @@
-package com.world.dp.user_service_apim;
+package com.world.dp.apim;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

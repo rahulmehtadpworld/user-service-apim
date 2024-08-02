@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.world.dp.user-service-apim' is invalid and this project uses 'com.world.dp.user_service_apim' instead.
+* The original package name 'com.world.dp.user-service-apim' is invalid and this project uses 'com.world.dp.apim' instead.
 
 # Getting Started
 
